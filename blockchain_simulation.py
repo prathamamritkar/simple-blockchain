@@ -1,10 +1,6 @@
 import hashlib
 import time
 
-# Implement a simple hash generator using SHA-256
-def sha256_hash(input_str):
-    return hashlib.sha256(input_str.encode()).hexdigest()
-
 # Create a Block class with: index, timestamp, data, previousHash, hash, and nonce
 class Block:
     def __init__(self, index, timestamp, data, previousHash):
@@ -13,18 +9,18 @@ class Block:
         self.data = data
         self.previousHash = previousHash
         self.nonce = 0
-        self.hash = sha256_hash(f"{self.index}{self.timestamp}{self.data}{self.previousHash}{self.nonce}")
+        self.hash = self.sha256_hash()
+
+    # Implement a simple hash generator using SHA-256
+    def sha256_hash(self):
+        block_string = f"{self.index}{self.timestamp}{self.data}{self.previousHash}{self.nonce}"
+        return hashlib.sha256(block_string.encode()).hexdigest()
 
 # Link 3 blocks by chaining their previousHash
 blockchain = [Block(0, time.time(), "Genesis Block", "0")]
 for i in range(1, 3):
     previous_block = blockchain[-1]
-    new_block = Block(
-        index=i,
-        timestamp=time.time(),
-        data=f"Block {i} Data",
-        previousHash=previous_block.hash
-    )
+    new_block = Block(i, time.time(), f"Block {i} Data", previous_block.hash)
     blockchain.append(new_block)
 
 # Display all blocks with their hashes
@@ -36,7 +32,7 @@ Hash: {block.hash}\n""")
 
 # Change the data of Block 1 and recalculate its hash.
 blockchain[1].data = "Tampered Data"
-blockchain[1].hash = sha256_hash(f"{blockchain[1].index}{blockchain[1].timestamp}{blockchain[1].data}{blockchain[1].previousHash}{blockchain[1].nonce}")
+blockchain[1].hash = blockchain[1].sha256_hash()
 
 # Observe how all following blocks become invalid unless hashes are recomputed.
 print("\nAfter tampering Block 1:")
