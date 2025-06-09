@@ -1,26 +1,37 @@
 import random
 
-# PoW: Miner with highest power
+# Create mock objects for 3 validators:
+# miner = {power: random value} for PoW
 miners = [{'name': 'MinerA', 'power': random.randint(1, 100)},
           {'name': 'MinerB', 'power': random.randint(1, 100)},
           {'name': 'MinerC', 'power': random.randint(1, 100)}]
-pow_winner = max(miners, key=lambda x: x['power'])
-print(f"PoW selected: {pow_winner['name']} (Power: {pow_winner['power']})")
-print("PoW: Validator with highest computational power is selected.")
-
-# PoS: Staker with highest stake
+# staker = {stake: random value} for PoS
 stakers = [{'name': 'StakerA', 'stake': random.randint(1, 100)},
            {'name': 'StakerB', 'stake': random.randint(1, 100)},
            {'name': 'StakerC', 'stake': random.randint(1, 100)}]
-pos_winner = max(stakers, key=lambda x: x['stake'])
-print(f"PoS selected: {pos_winner['name']} (Stake: {pos_winner['stake']})")
-print("PoS: Validator with highest stake is selected.")
-
-# DPoS: Delegate with most votes
+# voters = [3 mock accounts voting] for DPoS
 delegates = [{'name': 'DelegateA', 'votes': random.randint(1, 100)},
              {'name': 'DelegateB', 'votes': random.randint(1, 100)},
              {'name': 'DelegateC', 'votes': random.randint(1, 100)}]
-dpos_winner = max(delegates, key=lambda x: x['votes'])
-print(f"DPoS selected: {dpos_winner['name']} (Votes: {dpos_winner['votes']})")
-print("DPoS: Delegate with most votes is selected by token holders.")
+voters = [{'voter': 'Voter1', 'stake': random.randint(1, 50), 'delegate': 'DelegateA'},
+          {'voter': 'Voter2', 'stake': random.randint(1, 50), 'delegate': 'DelegateB'},
+          {'voter': 'Voter3', 'stake': random.randint(1, 50), 'delegate': 'DelegateA'}]
+delegates = {'DelegateA': sum(v['stake'] for v in voters if v['delegate'] == 'DelegateA'),
+             'DelegateB': sum(v['stake'] for v in voters if v['delegate'] == 'DelegateB'),
+             'DelegateC': sum(v['stake'] for v in voters if v['delegate'] == 'DelegateC')}
 
+# For PoW: Select validator with highest power
+pow_decision = max(miners, key=lambda x: x['power'])
+# For PoS: Select validator with highest stake
+pos_decision = max(stakers, key=lambda x: x['stake'])
+# For DPoS: Randomly choose a delegate based on most votes
+dpos_decision = max(delegates.items, key=lambda x: x[1])
+
+# Print selected validator and consenasus method used
+print(f"Selected PoW validator: {pow_decision['name']}, (Consensus method: Power {pow_decision['power']})")
+print(f"Selected PoS validator: {pos_decision['name']}, (Consensus method: Stake {pos_decision['stake']})")
+print(f"Selected DPoS validator: {dpos_winner[0]}, (Consensus method: Votes {dpos_winner[1]})")
+# Include a console.log explanation of the selection logic
+print("\nPoW: Validator with highest computational power is selected.")
+print("PoS: Validator with highest stake is selected.")
+print("DPoS: Delegate with most votes is selected by token holders.")
