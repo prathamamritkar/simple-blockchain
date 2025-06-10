@@ -19,9 +19,9 @@
 - Notable Technical Feature (e.g., privacy, pluggable consensus) -->
 | Blockchain Name | Type | Consensus Mechanism Used | Permission Model | Speed / Throughput (TPS) | Smart Contract Support (Language) | Token Support | Typical Use Case | Notable Technical Feature |
 |-----------------|------|--------------------------|------------------|--------------------|------------------------|---------------|------------------|---------------------------|
-| Solana | Public | Proof of History, PoS (Proof of Stake) | Open | >65000 | Y (Rust, C, C++) | Native | dApps, DeFi, NFTs | High TPS, low latency |
-| R3 in Private Mode | Private | Pluggable (Raft, PBFT (Practical Byzantine Fault Tolerance)) | Permissioned | >1000 | Y (Kotlin, Java) | Not native | B2B, FinTech, ERP | Privacy, P2P transactions |
-| IBM Food Trust | Consortium | PBFT (Practical Byzantine Fault Tolerance) | Permissioned | >1000 | Y ( Go, Java, Node.js) | Not native | Supply chain, food traceability | Privacy, modularity |
+| Solana | Public | PoH, PoS | Open | >65000 | Y (Rust, C, C++) | Native | dApps, DeFi, NFTs | High TPS, low latency |
+| R3 in Private Mode | Private | Pluggable (Raft, PBFT) | Permissioned | >1000 | Y (Kotlin, Java) | Not native | B2B, FinTech, ERP | Privacy, P2P transactions |
+| IBM Food Trust | Consortium | PBFT | Permissioned | >1000 | Y ( Go, Java, Node.js) | Not native | Supply chain, food traceability | Privacy, modularity |
 
 ---
 
