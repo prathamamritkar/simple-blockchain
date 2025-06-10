@@ -1,3 +1,4 @@
+# 3. Consensus Mechanism Simulation
 import random
 
 # Create mock objects for 3 validators:
