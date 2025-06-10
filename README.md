@@ -1,12 +1,14 @@
 # simple-blockchain
 Mini Task 1: Build &amp; Explain a Simple Blockchain
 
+---
+
 ### Blockchain Basics
-A blockchain is a **decentralized, distributed digital ledger** that records transactions in an immutable chain of cryptographically linked blocks. It operates without central authority, relying on consensus mechanisms to validate transactions. Each block contains a timestamp, transaction data, and a reference (hash) to the previous block, creating a tamper-evident structure. This design ensures transparency, security, and trustless verification across peer-to-peer networks[1][2].
+A blockchain is a **decentralized, distributed digital ledger** that records transactions in an immutable chain of cryptographically linked blocks. It operates without central authority, relying on consensus mechanisms to validate transactions. Each block contains a timestamp, transaction data, and a reference (hash) to the previous block, creating a tamper-evident structure. This design ensures transparency, security, and trustless verification across peer-to-peer networks.
 
 **Real-Life Use Cases**:
-- **Supply Chain Management**: Enables end-to-end tracking of goods (e.g., Walmart's food traceability system)[1].
-- **Digital Identity**: Provides secure, self-sovereign identities (e.g., Estonia’s e-Residency program)[1].
+- **Supply Chain Management**: Enables end-to-end tracking of goods (e.g., Walmart's food traceability system).
+- **Digital Identity**: Provides secure, self-sovereign identities (e.g., Estonia’s e-Residency program).
 
 ---
 
@@ -19,7 +21,7 @@ For transactions TX1, TX2, TX3, TX4:
 1. Hash TX1 & TX2 → Hash A
 2. Hash TX3 & TX4 → Hash B
 3. Hash A & B → Merkle Root  
-If TX3 is altered, Hash B and the Merkle Root change, instantly revealing tampering[1][3].
+If TX3 is altered, Hash B and the Merkle Root change, instantly revealing tampering.
 
 ---
 
