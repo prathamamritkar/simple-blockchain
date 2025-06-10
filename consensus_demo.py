@@ -10,9 +10,6 @@ stakers = [{'name': 'StakerA', 'stake': random.randint(1, 100)},
            {'name': 'StakerB', 'stake': random.randint(1, 100)},
            {'name': 'StakerC', 'stake': random.randint(1, 100)}]
 # voters = [3 mock accounts voting] for DPoS
-delegates = [{'name': 'DelegateA', 'votes': random.randint(1, 100)},
-             {'name': 'DelegateB', 'votes': random.randint(1, 100)},
-             {'name': 'DelegateC', 'votes': random.randint(1, 100)}]
 voters = [{'voter': 'Voter1', 'stake': random.randint(1, 50), 'delegate': 'DelegateA'},
           {'voter': 'Voter2', 'stake': random.randint(1, 50), 'delegate': 'DelegateB'},
           {'voter': 'Voter3', 'stake': random.randint(1, 50), 'delegate': 'DelegateA'}]
