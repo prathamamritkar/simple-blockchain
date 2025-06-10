@@ -9,7 +9,7 @@ A blockchain is a **decentralized, distributed digital ledger** that records tra
 
 <!-- List 2 real-life use cases (e.g., supply chain, digital identity) -->
 **Real-Life Use Cases**:
-- **Supply Chain Management**: Enables end-to-end tracking of goods like Walmart's food traceability system.
+- **Supply Chain**: Enables end-to-end tracking of goods like Walmart's food traceability system.
 - **Digital Identity**: Provides secure, self-sovereign identities like Estonia’s e-Residency program.
 
 ---
@@ -27,11 +27,18 @@ A blockchain is a **decentralized, distributed digital ledger** that records tra
 
 <!-- Briefly explain with an example how the Merkle root helps verify data integrity -->
 **Merkle Root Example**:  
-For transactions TX1, TX2, TX3, TX4:
-1. Hash TX1 & TX2 → Hash A
-2. Hash TX3 & TX4 → Hash B
-3. Hash A & B → Merkle Root  
-If TX3 is altered, Hash B and the Merkle Root change, instantly revealing tampering.
+
+Merkle Root (HashA + HashB = FinalHash)
+│
+|-- HashA (TX1 + TX2)
+│    |-- TX1: [Hash of TX1]
+|    |-- TX2: [Hash of TX2]
+│
+|-- HashB (TX3 + TX4)
+│    |-- TX3: [Hash of TX3]
+|    |-- TX4: [Hash of TX4]
+
+- For transactions TX1, TX2, TX3, TX4; if TX4 is changed, subsequently HashB changes, and subsequently Merkle Root changes, instantly revealing tampering.
 
 ---
 
