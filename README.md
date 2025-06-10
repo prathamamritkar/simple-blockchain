@@ -5,7 +5,7 @@
 
 <!-- Define blockchain in your own words (100–150 words) -->
 **Definition**:
-A blockchain is a **decentralized, distributed digital ledger** that records transactions in an immutable chain of cryptographically linked blocks. It operates without central authority, relying on consensus mechanisms to validate transactions. Each block contains a timestamp, transaction data, and a reference (hash) to the previous block, creating a tamper-evident structure. This design ensures transparency, security, and trustless verification across peer-to-peer networks.
+A blockchain is a **decentralized, distributed digital ledger** that records transactions in an immutable chain of cryptographically linked blocks. It operates without central authority, relying on consensus mechanisms to validate transactions. Each block contains a timestamp, transaction data, and a reference (hash) to the previous block, creating a tamper-evident structure. This design ensures transparency, security, and trustless verification across peer-to-peer networks.  
 
 <!-- List 2 real-life use cases (e.g., supply chain, digital identity) -->
 **Real-Life Use Cases**:
@@ -26,8 +26,8 @@ A blockchain is a **decentralized, distributed digital ledger** that records tra
 | **Merkle root**    | e4d464a0632cdcef533e22daa3f225ba7ef09078c01828b2b25bf73f519c236c |
 
 <!-- Briefly explain with an example how the Merkle root helps verify data integrity -->
-**Merkle Root Example**:  
-
+  
+**Merkle Root Example**:
 ```
 Merkle Root (HashA + HashB)
 │
@@ -52,7 +52,8 @@ Merkle Root (HashA + HashB)
 - Requires massive computational power to repeatedly hash data until meeting target criteria.
 - High energy consumption stems from competitive mining.
 - Energy required is high.
-- **PoW: Security through computation**
+- **PoW: Security through computation**  
+
 
 <!-- What is Proof of Stake and how does it differ? -->
 **Proof of Stake**
@@ -60,7 +61,7 @@ Merkle Root (HashA + HashB)
 - Eliminates energy-intensive mining by using deterministic selection (higher stake = higher chance).
 - More eco-friendly than PoW
 - Energy required is low.
-- **PoS: Security through financial stake**
+- **PoS: Security through financial stake**  
 
 <!-- What is Delegated Proof of Stake and how are validators selected? -->
 **Delegated PoS**
@@ -68,4 +69,4 @@ Merkle Root (HashA + HashB)
 - Voting power depends on stake size.
 - Delegates take turns producing blocks and can be voted out for poor performance.
 - Energy required is minimal.
-- **DPoS: Democratic governance via voting**
+- **DPoS: Democratic governance via voting**  
