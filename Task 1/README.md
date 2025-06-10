@@ -1,4 +1,4 @@
-<!-- Mini Task 1: Build &amp; Explain a Simple Blockchain-->
+<!-- Mini Task 1: Build & Explain a Simple Blockchain-->
 # Simple Blockchain
 
 ### 1. Blockchain Basics
