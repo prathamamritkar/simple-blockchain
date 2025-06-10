@@ -5,7 +5,7 @@
 
 <!-- Define blockchain in your own words (100–150 words) -->
 **Definition**:
-A blockchain is a **decentralized, distributed digital ledger** that records transactions in an immutable chain of cryptographically linked blocks. It operates without central authority, relying on consensus mechanisms to validate transactions. Each block contains a timestamp, transaction data, and a reference (hash) to the previous block, creating a tamper-evident structure. This design ensures transparency, security, and trustless verification across peer-to-peer networks.  
+A blockchain is a **decentralized, distributed digital ledger** that records transactions in an immutable chain of cryptographically linked blocks, relying on consensus mechanisms to validate transactions. Each block contains a data, previous hash, timestamp, nonce, Merkle root; creating a tamper-evident structure design ensuring transparency, security, and trustless verification across peer-to-peer networks.  Each Merkle root is simply the SHA-256 hash of that transaction data; in case of multiple transactions, each transaction is hashed, then pairs of those hashes is hashed, and so on, until one root hash remains.
 
 <!-- List 2 real-life use cases (e.g., supply chain, digital identity) -->
 **Real-Life Use Cases**:
