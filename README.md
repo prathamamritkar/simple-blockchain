@@ -28,16 +28,17 @@ A blockchain is a **decentralized, distributed digital ledger** that records tra
 <!-- Briefly explain with an example how the Merkle root helps verify data integrity -->
 **Merkle Root Example**:  
 
+```
 Merkle Root (HashA + HashB = FinalHash)
 │
-├── HashA (TX1 + TX2)
-│    ├── TX1: [Hash of TX1]
-|    └── TX2: [Hash of TX2]
+|-- HashA (TX1 + TX2)
+│    |-- TX1: [Hash of TX1]
+|    |-- TX2: [Hash of TX2]
 │
-└── HashB (TX3 + TX4)
-    ├── TX3: [Hash of TX3]
-    └── TX4: [Hash of TX4]
-
+|-- HashB (TX3 + TX4)
+    |-- TX3: [Hash of TX3]
+    |-- TX4: [Hash of TX4]
+```
 - For transactions TX1, TX2, TX3, TX4; if TX4 is changed, subsequently HashB changes, and subsequently Merkle Root changes, instantly revealing tampering.
 
 ---
