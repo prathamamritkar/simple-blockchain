@@ -25,7 +25,7 @@ pow_decision = max(miners, key=lambda x: x['power'])
 # For PoS: Select validator with highest stake
 pos_decision = max(stakers, key=lambda x: x['stake'])
 # For DPoS: Randomly choose a delegate based on most votes
-dpos_decision = max(delegates.items, key=lambda x: x[1])
+dpos_decision = max(delegates.items(), key=lambda x: x[1])
 
 # Print selected validator and consenasus method used
 print(f"Selected PoW validator: {pow_decision['name']}, (Consensus method: Power {pow_decision['power']})")
