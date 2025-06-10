@@ -30,7 +30,7 @@ dpos_decision = max(delegates.items, key=lambda x: x[1])
 # Print selected validator and consenasus method used
 print(f"Selected PoW validator: {pow_decision['name']}, (Consensus method: Power {pow_decision['power']})")
 print(f"Selected PoS validator: {pos_decision['name']}, (Consensus method: Stake {pos_decision['stake']})")
-print(f"Selected DPoS validator: {dpos_decision [0]}, (Consensus method: Votes {dpos_winner[1]})")
+print(f"Selected DPoS validator: {dpos_decision [0]}, (Consensus method: Votes {dpos_decision[1]})")
 # Include a console.log explanation of the selection logic
 print("\nPoW: Validator with highest computational power is selected.")
 print("PoS: Validator with highest stake is selected.")
