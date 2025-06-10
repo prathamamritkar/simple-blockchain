@@ -1,11 +1,12 @@
-# simple-blockchain
-Mini Task 1: Build &amp; Explain a Simple Blockchain
+<!-- Mini Task 1: Build &amp; Explain a Simple Blockchain-->
+# Simple Blockchain
 
 ---
 
 ### 1. Blockchain Basics
 
 <!-- Define blockchain in your own words (100–150 words) -->
+**Definition**:
 A blockchain is a **decentralized, distributed digital ledger** that records transactions in an immutable chain of cryptographically linked blocks. It operates without central authority, relying on consensus mechanisms to validate transactions. Each block contains a timestamp, transaction data, and a reference (hash) to the previous block, creating a tamper-evident structure. This design ensures transparency, security, and trustless verification across peer-to-peer networks.
 
 <!-- List 2 real-life use cases (e.g., supply chain, digital identity) -->
@@ -20,11 +21,11 @@ A blockchain is a **decentralized, distributed digital ledger** that records tra
 <!-- Draw a block showing: data, previous hash, timestamp, nonce, and Merkle root -->
 | Block #1            |                                                                     |
 |---------------------|---------------------------------------------------------------------|
-| **data:**           | Pratham's Block
-| **previous hash:**  | 0000000000000000000000000000000000000000000000000000000000000000 |
-| **timestamp:**      | 1749341000.0 |
-| **nonce:**          | 72608 |
-| **Merkle root:**    | e4d464a0632cdcef533e22daa3f225ba7ef09078c01828b2b25bf73f519c236c |
+| **data**           | Pratham's Block
+| **previous hash**  | 0000000000000000000000000000000000000000000000000000000000000000 |
+| **timestamp**      | 1749341000.0 |
+| **nonce**          | 72608 |
+| **Merkle root**    | e4d464a0632cdcef533e22daa3f225ba7ef09078c01828b2b25bf73f519c236c |
 
 <!-- Briefly explain with an example how the Merkle root helps verify data integrity -->
 **Merkle Root Example**:  
