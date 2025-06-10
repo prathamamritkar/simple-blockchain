@@ -19,7 +19,7 @@ A blockchain is a **decentralized, distributed digital ledger** that records tra
 <!-- Draw a block showing: data, previous hash, timestamp, nonce, and Merkle root -->
 | Block #1            |                                                                     |
 |---------------------|---------------------------------------------------------------------|
-| **data**           | Pratham's Block
+| **data**           | Pratham's Block |
 | **previous hash**  | 0000000000000000000000000000000000000000000000000000000000000000 |
 | **timestamp**      | 1749341000.0 |
 | **nonce**          | 72608 |
