@@ -1,10 +1,6 @@
 # simple-blockchain
 Mini Task 1: Build &amp; Explain a Simple Blockchain
 
-# Blockchain Fundamentals
-
-## Theoretical Part
-
 ### Blockchain Basics
 A blockchain is a **decentralized, distributed digital ledger** that records transactions in an immutable chain of cryptographically linked blocks. It operates without central authority, relying on consensus mechanisms to validate transactions. Each block contains a timestamp, transaction data, and a reference (hash) to the previous block, creating a tamper-evident structure. This design ensures transparency, security, and trustless verification across peer-to-peer networks[1][2].
 
