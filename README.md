@@ -1,8 +1,6 @@
 <!-- Mini Task 1: Build &amp; Explain a Simple Blockchain-->
 # Simple Blockchain
 
----
-
 ### 1. Blockchain Basics
 
 <!-- Define blockchain in your own words (100–150 words) -->
