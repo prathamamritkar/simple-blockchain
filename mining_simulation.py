@@ -1,3 +1,5 @@
+# 2. Nonce Mining Simulation
+
 import hashlib
 import time
 
