@@ -29,7 +29,7 @@ A blockchain is a **decentralized, distributed digital ledger** that records tra
 **Merkle Root Example**:  
 
 ```
-Merkle Root (HashA + HashB = FinalHash)
+Merkle Root (HashA + HashB)
 │
 |-- HashA (TX1 + TX2)
 │    |-- TX1: [Hash of TX1]
