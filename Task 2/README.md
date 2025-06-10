@@ -2,7 +2,7 @@
 - Public Blockchain: (e.g., Ethereum, Bitcoin, Solana)
 - Private Blockchain: (e.g., Hyperledger Fabric, R3 Corda in private mode)
 - Consortium Blockchain: (e.g., R3 Corda, Quorum, IBM Food Trust) -->
-# Types of Blockchain
+# Blockchain Types and Examples
 
 
 ## 1. Comparison Table
